@@ -372,9 +372,6 @@ section {
     padding: 10px;
 }
 
-.newAni_list > a:hover > img {
-    opacity: .6;
-}
 
 
 /* -------------인기애니 */
@@ -409,11 +406,8 @@ section {
     padding: 10px;
 }
 
-.hotAni_list > a:hover > img {
-    opacity: .6;
-}
 
-/* -----------분기 애니 */
+/* ----------추억의 애니 */
 
 #Ani-kinds {
     width: 100%;
@@ -445,9 +439,30 @@ section {
     padding: 10px;
 }
 
-.Ani-kinds_list > a:hover > img {
-    opacity: .6;
+
+/* -------------title-box */
+.swiper-slide {
+    position: relative;
 }
+
+.title-box {
+    position: absolute;
+    width: 101%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.title-box > p {
+    text-align: center;
+    line-height: 180px;
+    font-size: 16px;
+}
+
 
 /* -----------------footer ---- */
 
@@ -506,10 +521,3 @@ footer {
 #sns > a > img:hover {
     transform: scale(1.1);
 }
-/* 
-video {
-    position: absolute;
-    top: 47%;
-    opacity: .35;
-    width: 100%;
-} */

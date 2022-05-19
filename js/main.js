@@ -36,6 +36,12 @@ $(document).ready(function() {
       mainSlide();
     })
 
+    $(".swiper-slide").hover(function() {
+      $(".title-box", this).stop().fadeIn();
+    }, function() {
+      $(".title-box", this).stop().hide();
+    })
+
 
 
 
